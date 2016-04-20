@@ -1,0 +1,252 @@
+<div class='h1'><i class="font-icon icon-user"></i>配置</div>
+
+<div class="section">
+   当前目录已有项目存在，请谨慎操作！
+</div>
+
+<div class="section">
+    <table class="table">
+        <tr>
+            <td>项目名称</td>
+            <td><input type="text" class="form-control" id="p_name" placeholder="demo"></td>
+        </tr>
+        <tr>
+            <td>项目描述</td>
+            <td><input type="text" class="form-control" id="p_des" placeholder="demo"></td>
+        </tr>
+        <tr>
+            <td>开发者</td>
+            <td><input type="text" class="form-control" id="p_author" placeholder="佚名"></td>
+        </tr>
+        <tr>
+            <td>部署目录</td>
+            <td><input type="text" class="form-control" id="p_dist" placeholder="/deloyed"></td>
+        </tr>
+    </table>
+</div>
+
+<form id="custom-form" method="post" action="/yqb/writeconfig">
+    <div class="section member">
+        <h4>基础样式 <span><button data-check="1" class="btn toggle" type="button">全选/全部取消</button></span></h4>
+        <div class="row" style="font-size:16px;">
+            <div class="col-sm-5">
+                <label>
+                    <input type="checkbox" name="base_css" value="reset" checked="">reset<span>reset.css</span>
+                </label>
+            </div>
+            <div class="col-sm-5">
+                <label>
+                    <input type="checkbox" name="base_css" value="type" checked="">文本<span>type.css</span>
+                </label>
+            </div>
+            <div class="col-sm-5">
+                <label>
+                    <input type="checkbox" name="base_css" value="layout" checked="">布局<span>layout.css</span>
+                </label>
+            </div>
+            <div class="col-sm-5">
+                <label>
+                    <input type="checkbox" name="base_css" value="grid" checked="">网格<span>grid.css</span>
+                </label>
+            </div>
+            <div class="col-sm-5">
+                <label>
+                    <input type="checkbox" name="base_css" value="placehold" checked="">占位<span>placehold.css</span>
+                </label>
+            </div>
+            <div class="col-sm-5">
+                <label>
+                    <input type="checkbox" name="base_css" value="border" checked="">1px解决方案<span>border.css</span>
+                </label>
+            </div>
+            <div class="col-sm-5">
+                <label>
+                    <input type="checkbox" name="base_css" value="arrowlink" checked="">箭头链接<span>arrowlink.css</span>
+                </label>
+            </div>
+            <div class="col-sm-5">
+                <label>
+                    <input type="checkbox" name="css" value="nowrap" checked="">文字截断<span>nowrap.css</span>
+                </label>
+            </div>
+            <div class="col-sm-5">
+                <label>
+                    <input type="checkbox" name="css" value="nowrap" checked="">文字截断<span>nowrap.css</span>
+                </label>
+            </div>
+            <div class="col-sm-5">
+                <label>
+                    <input type="checkbox" name="css" value="justify" checked="">两端对齐<span>justify.css</span>
+                </label>
+            </div>
+            <div class="col-sm-5">
+                <label>
+                    <input type="checkbox" name="css" value="icon" checked="">基本图标<span>icon.css</span>
+                </label>
+            </div>
+            <div class="col-sm-5">
+                <label>
+                    <input type="checkbox" name="css" value="icon-full" checked="">所有图标<span>icon-full.css</span>
+                </label>
+            </div>
+            <div class="col-sm-5">
+
+            </div>
+            <div class="col-sm-5">
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="section member">
+        <h4>UI 组件</h4>
+
+        <div class="row" style="font-size:16px;">
+            <div class="col-sm-5">
+                <label>
+                    <input type="checkbox" name="css" value="panel" checked="">面板<span>panel.css</span>
+                </label>
+            </div>
+            <div class="col-sm-5">
+                <label>
+                    <input type="checkbox" name="css" value="btn,btn-group" checked="">按钮<span>btn,btn-group.css</span>
+                </label>
+            </div>
+            <div class="col-sm-5">
+                <label>
+                    <input type="checkbox" name="css" value="avatar" checked="">头像<span>avatar.css</span>
+                </label>
+            </div>
+            <div class="col-sm-5">
+                <label>
+                    <input type="checkbox" name="css" value="reddot" checked="">红点<span>reddot.css</span>
+                </label>
+            </div>
+            <div class="col-sm-5">
+                <label>
+                    <input type="checkbox" name="css" value="badge" checked="">徽标<span>badge.css</span>
+                </label>
+            </div>
+            <div class="col-sm-5">
+                <label>
+                    <input type="checkbox" name="css" value="label" checked="">标签<span>label.css</span>
+                </label>
+            </div>
+            <div class="col-sm-5">
+                <label>
+                    <input type="checkbox" name="css" value="tag" checked="">角标<span>tag.css</span>
+                </label>
+            </div>
+            <div class="col-sm-5">
+                <label>
+                    <input type="checkbox" name="css" value="searchbar" checked="">搜索框<span>searchbar.css</span>
+                </label>
+            </div>
+            <div class="col-sm-5">
+                <label>
+                    <input type="checkbox" name="css" value="list" checked="">列表<span>list.css</span>
+                </label>
+            </div>
+            <div class="col-sm-5">
+                <label>
+                    <input type="checkbox" name="css" value="form,checkbox,switch,radio,select,input"
+                           checked="">表单<span>form.css</span>
+                </label>
+            </div>
+            <div class="col-sm-5">
+                <label>
+                    <input type="checkbox" name="css" value="table" checked="">表格<span>table.css</span>
+                </label>
+            </div>
+            <div class="col-sm-5">
+                <label>
+                    <input type="checkbox" name="css" value="notice" checked="">通知<span>notice.css</span>
+                </label>
+            </div>
+            <div class="col-sm-5">
+                <label>
+                    <input type="checkbox" name="css" value="tips" checked="">普通提示<span>tips.css</span>
+                </label>
+            </div>
+            <div class="col-sm-5">
+                <label>
+                    <input type="checkbox" name="css" value="tooltips" checked="">工具提示<span>tooltips.css</span>
+                </label>
+            </div>
+            <div class="col-sm-5">
+                <label>
+                    <input type="checkbox" name="css" value="newstips" checked="">新消息提示<span>newstips.css</span>
+                </label>
+            </div>
+            <div class="col-sm-5">
+                <label>
+                    <input type="checkbox" name="css" value="poptips" checked="">浮层提示<span>poptips.css</span>
+                </label>
+            </div>
+            <div class="col-sm-5">
+                <label>
+                    <input type="checkbox" name="css" value="selector" checked="">选择器<span>selector.css</span>
+                </label>
+            </div>
+            <div class="col-sm-5">
+                <label>
+                    <input type="checkbox" name="css" value="progress" checked="">进度条<span>progress.css</span>
+                </label>
+            </div>
+            <div class="col-sm-5">
+                <label>
+                    <input type="checkbox" name="css" value="loading" checked="">加载中<span>loading.css</span>
+                </label>
+            </div>
+            <div class="col-sm-5">
+                <label>
+                    <input type="checkbox" name="css" value="actionsheet" checked="">菜单<span>actionsheet.css</span>
+                </label>
+            </div>
+            <div class="col-sm-5">
+                <label>
+                    <input type="checkbox" name="css" value="dialog" checked="">对话框<span>dialog.css</span>
+                </label>
+            </div>
+            <div class="col-sm-5">
+                <label>
+                    <input type="checkbox" name="css" value="tab" checked="">选项卡<span>tab.css</span>
+                </label>
+            </div>
+            <div class="col-sm-5">
+                <label>
+                    <input type="checkbox" name="css" value="slider" checked="">轮播图<span>slider.css</span>
+                </label>
+            </div>
+            <div class="col-sm-5">
+                <label>
+                    <input type="checkbox" name="css" value="vip">vip<span>vip.css</span>
+                </label>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="section member">
+        js
+        <label>
+            <input type="checkbox" name="base_js" value="dialog" checked="">dialog<span>zepto.js</span>
+        </label>
+        <label>
+            <input type="checkbox" name="base_js" value="event" checked="">event<span>event.js</span>
+        </label>
+        <label>
+            <input type="checkbox" name="base_js" value="touch" checked="">touch<span>touch.js</span>
+        </label>
+        <label>
+            <input type="checkbox" name="js" value="ajax" checked="">ajax<span>ajax.js</span>
+        </label>
+        <label>
+            <input type="checkbox" name="js" value="form" checked="">form<span>form.js</span>
+        </label>
+    </div>
+
+    <button type="submit" class="submit">定制完成</button>
+</form>
+

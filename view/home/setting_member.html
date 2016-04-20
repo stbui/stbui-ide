@@ -1,0 +1,150 @@
+<div class='h1'><i class="font-icon icon-group"></i>用户管理</div>
+<div class="nav">
+    <a href="javascript:;" class="this" data-page="member">用户管理</a>
+    <a href="javascript:;" data-page="group">用户组管理</a>
+    <a href="javascript:;" class="group_status" data-page="group_editor">添加用户组</a>
+    <div style="clear:both;"></div>
+</div>
+
+<!-- 权限组列表 -->
+<div class="section member">
+	<table id='list' align="center" border=0 cellspacing=0 cellpadding=0 ></table>
+	<a href="javascript:void(0)" class='add'><i class="icon-plus pr-10"></i>添加</a>
+    <div class="info hidden"></div>
+</div>
+
+<!-- 用户组列表 -->
+<div class="section group hidden">
+    <table id='list' align="center" border=0 cellspacing=0 cellpadding=0 ></table>
+    <a href="javascript:void(0)" class='add'><i class="icon-plus"></i>添加</a>
+</div>
+
+<!-- 权限组编辑 -->
+<div class="section group_editor hidden">
+    <div class="together input">
+        <div class="title"><i>用户组名</i></div>
+        <input type="text" id='role' data-before=""/>
+        <span class="text">建议英文名，不能重复</span>
+        <a href="javascript:;" class="button warning" style="margin-left: 20px;padding: 3px 5px;background: #ccc;border:none;color:#fff;"><i class="icon-warning-sign"></i>提示!</a>
+        <div style="display:none;" class="group_tips">
+            <ul style="text-align: left;padding: 10px;list-style: none;">
+                <li>1.用户组名不能重复，修改组名后原属于改组用户会自动关联</li><li>2.扩展名限制关系系统安全性，请务必谨慎操作<i>(果在web目录下新建php;就意味着改程序的权限对此用户形同虚设)</i></li><li>3.户管理、权限组管理；查看权限和增删改权限是绑定的；程序会自动关联</li><li>4.设定权限组能添加权限组后，后续权限是不继承的<i>（此权限相当于最高权限）</i></li>            </ul>
+        </div>
+        <div style="clear:both;"></div>
+        <div class="title"><i>展示名称</i></div>
+        <input type="text" id='name'/><span class="text">组名描述</span>
+        <div style="clear:both;"></div>
+        <div class="title"><i>扩展名限制</i></div>
+        <input type="text" id='ext_not_allow' default='php|asp|jsp' value="php|asp|jsp"/>
+        <span class="text">多个用|分隔开</span>
+        <a href="javascript:;" class="button warning path_ext_tips" title='不允许此类文件的上传,<br/>重命名(重命名为指定扩展名),<br/>编辑保存,远程下载,解压' style="margin-left: 20px;padding: 3px 5px;background: #ccc;border:none;color:#fff;"><i class="icon-warning-sign"></i>提示!</a>
+        <div style="clear:both;"></div>
+    </div>
+    <div class="together">
+        <div class="title"><i>文件管理</i></div>
+        <div class="tagdiv" style="margin:2px 0 5px">
+            <a class="tag" href="javascript:;" data-role='explorer:mkfile;app:user_app'>
+                <input type="checkbox" class="checkbox"><span>新建文件</span>
+            </a>
+            <a class="tag" href="javascript:;" data-role='explorer:mkdir'>
+                <input type="checkbox" class="checkbox"><span>新建文件夹</span>
+            </a>
+            <a class="tag" href="javascript:;" data-role='explorer:pathRname'>
+                <input type="checkbox" class="checkbox"><span>重命名</span>
+            </a>
+            <a class="tag" href="javascript:;" data-role='explorer:pathDelete'>
+                <input type="checkbox" class="checkbox"><span>文件(夹)删除</span>
+            </a>
+            <a class="tag" href="javascript:;" data-role='explorer:pathInfo;explorer:pathInfoMuti'>
+                <input type="checkbox" class="checkbox"><span>文件(夹)属性</span>
+            </a>
+
+            <a class="tag" href="javascript:;" 
+            data-role='explorer:pathCopy;explorer:pathCute;explorer:pathCuteDrag;explorer:clipboard;explorer:pathPast'>
+                <input type="checkbox" class="checkbox"><span>移动(复制/剪切/粘贴/拖拽操作)</span>
+            </a>
+            <a class="tag" href="javascript:;" data-role='explorer:zip'>
+                <input type="checkbox" class="checkbox"><span>zip压缩</span>
+            </a>
+            <a class="tag" href="javascript:;" data-role='explorer:unzip'>
+                <input type="checkbox" class="checkbox"><span>zip解压</span>
+            </a>
+            <a class="tag" href="javascript:;" data-role='explorer:search'>
+                <input type="checkbox" class="checkbox"><span>搜索</span>
+            </a> 
+            <a class="tag" href="javascript:;" data-role='editor:fileSave'>
+                <input type="checkbox" class="checkbox"><span>编辑保存文件</span>
+            </a>
+            <div style="clear:both;"></div>
+        </div>
+        <div style="clear:both;"></div>
+    </div>
+    <div class="together">
+        <div class="title"><i>上传下载</i></div>
+        <a class="tag" href="javascript:;" data-role='explorer:fileUpload'>
+            <input type="checkbox" class="checkbox"><span>允许上传</span>
+        </a>
+        <a class="tag" href="javascript:;" data-role='explorer:serverDownload'>
+            <input type="checkbox" class="checkbox"><span>远程下载</span>
+        </a>
+        <a class="tag" href="javascript:;" data-role='explorer:fileDownload'>
+            <input type="checkbox" class="checkbox"><span>文件下载</span>
+        </a>
+        <a class="tag" href="javascript:;" data-role='userShare:set;userShare:del'>
+            <input type="checkbox" class="checkbox"><span>共享</span>
+        </a>
+        <div style="clear:both;"></div>   
+    </div>
+
+    <div class="together">
+        <div class="title"><i>配置数据</i></div>
+        <a class="tag" href="javascript:;" data-role='user:changePassword'>
+            <input type="checkbox" class="checkbox"><span>修改密码</span>
+        </a>
+        <a class="tag" href="javascript:;" data-role='setting:set'>
+            <input type="checkbox" class="checkbox"><span>配置数据</span>
+        </a>
+        <a class="tag" href="javascript:;" data-role='fav:edit;fav:add;fav:del'>
+            <input type="checkbox" id="23" class="checkbox"><span>收藏夹操作(添加/编辑/删除)</span>
+        </a>
+        <div style="clear:both;"></div>
+    </div>
+
+    <div class="together combox">
+        <div class="title"><i>用户管理</i></div>
+        <a class="tag" href="javascript:;" data-role='member:get'>
+            <input type="checkbox" class="checkbox"><span>列表查看</span>
+        </a>
+        <a class="tag" href="javascript:;" data-role='member:add'>
+            <input type="checkbox" class="checkbox"><span>添加用户</span>
+        </a>
+        <a class="tag" href="javascript:;" data-role='member:edit'>
+            <input type="checkbox" class="checkbox"><span>编辑用户</span>
+        </a>
+        <a class="tag" href="javascript:;" data-role='member:del'>
+            <input type="checkbox" class="checkbox"><span>删除用户</span>
+        </a>
+        <div style="clear:both;"></div> 
+    </div>    
+    <div class="together combox">
+        <div class="title"><i>用户组管理</i></div>
+        <a class="tag" href="javascript:;" data-role='group:get'>
+            <input type="checkbox" class="checkbox"><span>列表查看</span>
+        </a>
+        <a class="tag" href="javascript:;" data-role='group:add'>
+            <input type="checkbox" class="checkbox"><span>添加用户组</span>
+        </a>
+        <a class="tag" href="javascript:;" data-role='group:edit'>
+            <input type="checkbox" class="checkbox"><span>编辑用户组</span>
+        </a>
+        <a class="tag" href="javascript:;" data-role='group:del'>
+            <input type="checkbox" class="checkbox"><span>删除用户组</span>
+        </a>
+        <div style="clear:both;"></div> 
+    </div>
+    <a href="javascript:;" class="add_save button">保存提交</a>
+    <a href="javascript:;" class="hidden edit_exit button">返回添加</a>
+    <a href="javascript:;" class="hidden edit_save button">保存</a>
+    <a href="javascript:;" class="revert">全选/反选</a>   
+</div>
+

@@ -1,0 +1,152 @@
+<div class='h1'><i class="font-icon icon-user"></i>系统设置</div>
+<div class="nav">
+    <a href="javascript:;"  class="this" data-page="setting">系统设置</a>
+    <a href="javascript:;" class="" data-page="setting_menu">菜单管理</a>
+    <div style="clear:both;"></div>
+</div>
+
+<div class="section setting system_setting">
+	<div class="box_line">
+	    <span class='infotitle'>程序名称:</span><input type="text" name="system_name" 
+      value="资源管理器" />
+	    <i>程序logo标题</i>
+	</div>
+	<div class="box_line">
+		<span class='infotitle'>程序描述:</span><input type="text" name="system_desc" 
+    value="资源管理器" />
+		<i>程序描述</i>
+	</div>
+	<div class="box_line">
+		<span class='infotitle'>目录排除:</span><input type="text" name="path_hidden" 
+      value=".DS_Store,.gitignore" />
+		<i>默认不显示的目录和文件,逗号隔开</i>
+	</div>
+	<div class="box_line">
+		<span class='infotitle'>新用户默认创建目录:</span>
+		<input type="text" name="new_user_folder" value="project" />
+		<i>用逗号隔开</i>
+	</div>
+	<div class="box_line">
+		<span class='infotitle'>新用户默认创建app:</span>
+		<input type="text" name="new_user_app" 
+			value=""/>
+        <i>应用中心的应用，多个用逗号隔开</i>
+	</div>
+	<div class="box_line">
+		<span class='infotitle'>游客自动登录:</span>
+			<label>
+			<input type="checkbox" name="auto_login" 
+		       />
+		    <i>默认登录用户名为<code>guest</code>的用户；开启后确保<code>guest</code>用户存在</i>
+		    </label>		
+	</div>
+	<div class="box_line">
+		<span class='infotitle'>登录后默认进入:</span>
+		<label><input type="radio" name="first_in" value="desktop"  />桌面</label>
+		<label><input type="radio" name="first_in" value="explorer" checked="checked" />文件管理</label>
+		<label><input type="radio" name="first_in" value="editor"  />编辑器</label>
+	  <div style="clear:both"></div>
+  </div>
+  <div class="box_line">
+    <a href="javascript:void(0);" class="system_save button">保存</a>
+  </div>
+  <div style="clear:both;"></div>
+</div>
+
+<div class="section setting_menu hidden">
+    <table id="list" align="center" border="0" cellspacing="0" cellpadding="0">
+	    <tbody><tr class="title"><td width="10%">菜单名</td><td>url地址<span>(url地址或js代码)</span></td><td>操作</td></tr>
+                <!-- <tr class="menu_list  menu_system  menu_show ">
+            <td class="name"><input type="text" name="name" value="desktop"/>
+                <span>桌面</span>
+            </td>
+            <td class="url">
+                <input type="text" name="url" value="index.php?desktop">
+                <span>desktop</span>
+                <label><input type="checkbox" name="target" value="_self" 
+                     />新窗口打开</label> 
+            </td>
+            <td class="action">
+            	<a href="javascript:void(0)" class="button move_up icon-arrow-up"></a>
+            	<a href="javascript:void(0)" class="button move_down icon-arrow-down"></a>
+            	<a href="javascript:void(0)" class="button move_hidden">
+                    隐藏                </a>
+                <a href="javascript:void(0)" class="button move_del">删除</a>
+            </td>
+    	</tr> -->
+                <tr class="menu_list  menu_system  menu_show ">
+            <td class="name"><input type="text" name="name" value="explorer"/>
+                <span>文件管理</span>
+            </td>
+            <td class="url">
+                <input type="text" name="url" value="index.php?explorer">
+                <span>explorer</span>
+                <label><input type="checkbox" name="target" value="_self" 
+                     />新窗口打开</label> 
+            </td>
+            <td class="action">
+            	<a href="javascript:void(0)" class="button move_up icon-arrow-up"></a>
+            	<a href="javascript:void(0)" class="button move_down icon-arrow-down"></a>
+            	<a href="javascript:void(0)" class="button move_hidden">
+                    隐藏                </a>
+                <a href="javascript:void(0)" class="button move_del">删除</a>
+            </td>
+    	</tr>
+                <tr class="menu_list  menu_system  menu_show ">
+            <td class="name"><input type="text" name="name" value="editor"/>
+                <span>编辑器</span>
+            </td>
+            <td class="url">
+                <input type="text" name="url" value="index.php?editor">
+                <span>editor</span>
+                <label><input type="checkbox" name="target" value="_self" 
+                     />新窗口打开</label> 
+            </td>
+            <td class="action">
+            	<a href="javascript:void(0)" class="button move_up icon-arrow-up"></a>
+            	<a href="javascript:void(0)" class="button move_down icon-arrow-down"></a>
+            	<a href="javascript:void(0)" class="button move_hidden">
+                    隐藏                </a>
+                <a href="javascript:void(0)" class="button move_del">删除</a>
+            </td>
+    	</tr>
+                <!-- <tr class="menu_list  menu_show ">
+            <td class="name"><input type="text" name="name" value="adminer"/>
+                <span></span>
+            </td>
+            <td class="url">
+                <input type="text" name="url" value="./lib/plugins/adminer/">
+                <span>adminer</span>
+                <label><input type="checkbox" name="target" value="_blank" 
+                    checked='checked' />新窗口打开</label> 
+            </td>
+            <td class="action">
+            	<a href="javascript:void(0)" class="button move_up icon-arrow-up"></a>
+            	<a href="javascript:void(0)" class="button move_down icon-arrow-down"></a>
+            	<a href="javascript:void(0)" class="button move_hidden">
+                    隐藏                </a>
+                <a href="javascript:void(0)" class="button move_del">删除</a>
+            </td>
+    	</tr> -->
+                <tr class="menu_list  menu_show  menu_default hidden ">
+            <td class="name"><input type="text" name="name" value=""/>
+                <span></span>
+            </td>
+            <td class="url">
+                <input type="text" name="url" value="">
+                <span></span>
+                <label><input type="checkbox" name="target" value="_blank" 
+                    checked='checked' />新窗口打开</label> 
+            </td>
+            <td class="action">
+            	<a href="javascript:void(0)" class="button move_up icon-arrow-up"></a>
+            	<a href="javascript:void(0)" class="button move_down icon-arrow-down"></a>
+            	<a href="javascript:void(0)" class="button move_hidden">隐藏</a>
+                <a href="javascript:void(0)" class="button move_del">删除</a>
+            </td>
+    	</tr>
+        		</tbody>
+    </table>
+    <a href="javascript:void(0)" class="add system_menu_add"><i class="icon-plus pr-10"></i>添加</a>
+    <a href="javascript:void(0);" class="system_menu_save button">保存</a>
+</div>
