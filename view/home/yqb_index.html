@@ -5,6 +5,7 @@
     #body input:focus {
         box-shadow: none;
     }
+
     .submit {
         padding: 10px 0;
         width: 95%;
@@ -16,10 +17,12 @@
         cursor: pointer;
         background-color: #fff;
     }
+
     .submit:hover {
         background-color: #4265a4;
         color: #fff;
     }
+
     #body .main .section span {
         font-size: 12px;
         color: #999;
@@ -42,10 +45,19 @@
             <li id="about"><i class="font-icon icon-info-sign"></i>关于作品</li>
         </ul>
     </div>
-    <div class='main'></div>
+    <div class='main'>
+        <button type="button" class="btn">定制配置</button>
+        <button type="button" class="btn">启动服务</button>
+        <button type="button" class="btn">构建脚本(debug模式)</button>
+        <button type="button" class="btn">构建脚本(release模式)</button>
+        <button type="button" class="btn">关闭服务</button>
+        <button type="button" class="btn">检查服务</button>
+        <div class="info"></div>
+    </div>
 </div>
 
 <%include common/script.html%>
+<script type="text/javascript" src="/static/js/lib/socket.io/socket.io.js"></script>
 <script type="text/javascript">
     seajs.config({
         base: "/static/js/",
@@ -54,7 +66,7 @@
             [/^(.*\.(?:css|js))(.*)$/i, '$1$2?ver=' + G.version]
         ]
     });
-    seajs.use('app/src/yqb/main');
+    seajs.use('_dev/src/stbui/main');
 </script>
 </body>
 </html>

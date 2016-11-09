@@ -1,0 +1,14 @@
+{
+    "version": 3,
+    "sources": [
+        "..\\..\\..\\src\\common\\controller\\file.js"
+    ],
+    "names": [
+        "getFile"
+    ],
+    "mappings": "AAAA;;;;AAEA;;;;;;kBAEe;AACdA,QADc,qBACL,CAER;AAHa,C",
+    "file": "..\\..\\..\\src\\common\\controller\\file.js",
+    "sourcesContent": [
+        "'use strict'\n\nimport fs from 'fs';\n\nexport default {\n\tgetFile(){\n\t\t\n\t}\n}"
+    ]
+}

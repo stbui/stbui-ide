@@ -2,7 +2,7 @@
   "apps": [{
     "name": "lib",
     "script": "www/production.js",
-    "cwd": "/web/yqb-master",
+    "cwd": "/web/stbui-ide",
     "exec_mode": "cluster",
     "instances": 0,
     "max_memory_restart": "1G",

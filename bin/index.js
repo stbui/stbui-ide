@@ -30,7 +30,7 @@ program.usage('[options] name')
 
 program.on('--help', function() {
 	console.log();
-	console.log('yqb-web help');
+	console.log('stbui-ide help');
 	console.log();
 });
 

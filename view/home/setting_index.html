@@ -21,16 +21,17 @@
 		<div class='main'></div>
 	</div>
 
-<%include common/script.html%>
-<script type="text/javascript">
-	seajs.config({
-		base: "/static/js/",
-		preload: ["lib/jquery-1.8.0.min"],
-		map:[
-			[ /^(.*\.(?:css|js))(.*)$/i,'$1$2?ver='+G.version]
-		]
-	});
-	seajs.use('app/src/setting/main');
-</script>
+	<%include common/script.html%>
+
+	<script type="text/javascript">
+		seajs.config({
+			base: "/static/js/",
+			preload: ["lib/jquery-1.8.0.min"],
+			map:[
+				[ /^(.*\.(?:css|js))(.*)$/i,'$1$2?ver='+G.version]
+			]
+		});
+		seajs.use('app/src/setting/main');
+	</script>
 </body>
 </html>

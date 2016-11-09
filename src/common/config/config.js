@@ -4,7 +4,8 @@
  */
 export default {
   //key: value
-  system_name:'YQB Tools',
+  port:'8363',
+  system_name:'stbui online Tools',
   system_desc:'文件管理构建系统',
   auto_login:'',
   first_in:'',

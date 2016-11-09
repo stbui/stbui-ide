@@ -1,0 +1,17 @@
+{
+  "family": "test",
+  "version": "0.0.1",
+  "name": "stbui-ide",
+  "spm": {
+    "alias": {
+      "jquery": "lib/jquery-1.8.0.min"
+    }
+  },
+  "devDependencies": {
+    "grunt": "^0.4.2",
+    "grunt-cmd-concat": "^0.2.8",
+    "grunt-cmd-transport": "^0.5.1",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-uglify": "^2.0.0"
+  }
+}

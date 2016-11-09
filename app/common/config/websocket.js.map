@@ -1,0 +1,28 @@
+{
+    "version": 3,
+    "sources": [
+        "..\\..\\..\\src\\common\\config\\websocket.js"
+    ],
+    "names": [
+        "on",
+        "type",
+        "allow_origin",
+        "sub_protocal",
+        "adapter",
+        "undefined",
+        "path",
+        "messages",
+        "open",
+        "close",
+        "launcher",
+        "chat",
+        "typing",
+        "stoptyping",
+        "adduser"
+    ],
+    "mappings": ";;;kBACe;AACbA,MAAI,IADS,EACH;AACVC,QAAM,WAFO;AAGbC,gBAAc,EAHD;AAIbC,gBAAc,EAJD;AAKbC,WAASC,SALI;AAMbC,QAAM,EANO,EAMH;AACVC,YAAU;AACRC,UAAM,oBADE;AAERC,WAAO,qBAFC;AAGRC,cAAU,wBAHF;AAIRC,UAAM,oBAJE;AAKRC,YAAQ,sBALA;AAMRC,gBAAY,0BANJ;AAORC,aAAS;AAPD;AAPG,C",
+    "file": "..\\..\\..\\src\\common\\config\\websocket.js",
+    "sourcesContent": [
+        "\nexport default {\n  on: true, //是否开启 WebSocket\n  type: \"socket.io\",\n  allow_origin: \"\",\n  sub_protocal: \"\",\n  adapter: undefined,\n  path: \"\", //url path for websocket\n  messages: {\n    open: 'home/explorer/open',\n    close: 'home/explorer/close',\n    launcher: 'home/explorer/launcher',\n    chat: 'home/explorer/chat',\n    typing: 'home/explorer/typing',\n    stoptyping: 'home/explorer/stoptyping',\n    adduser: 'home/explorer/adduser'\n  }\n};"
+    ]
+}

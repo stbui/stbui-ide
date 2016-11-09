@@ -1,5 +1,6 @@
 <%include common/header.html%>
 <link href="/static/css/skin/metro/app_explorer.css" rel="stylesheet" id='link_css_list'/>
+<link rel="stylesheet" href="/static/xterm/xterm.css">
 </head>
 
 <body style="overflow:hidden;" oncontextmenu="return core.contextmenu();">
@@ -28,7 +29,7 @@
             </button>
 
             <div id='yarnball' title="点击进入编辑状态"></div>
-            <div id='yarnball_input'><input type="text" name="path" value="" class="path" id="path"/></div>
+            <div id='yarnball_input'><input type="text" name="path" value="<%=path%>" class="path" id="path"/></div>
 
             <button class="btn btn-default" id='fav' title='添加到收藏夹' type="button">
                 <i class="font-icon icon-star"></i>
@@ -103,7 +104,7 @@
                             <button id='manage' class="btn btn-default" type="button">
                                 <i class="font-icon icon-legal"></i>管理
                             </button>
-                            <button id='yqb' class="btn btn-default" type="button">
+                            <button id='stbui' class="btn btn-default" type="button">
                                 <i class="font-icon icon-legal"></i>构建
                             </button>
 
@@ -184,6 +185,7 @@
 <%include common/script.html%>
 <script type="text/javascript" src="/static/js/lib/socket.io/socket.io.js"></script>
 <script type="text/javascript">
+// <%=path%>
     G.this_path = G.myhome+'\\';
     seajs.config({
         base: "/static/js/",
@@ -192,7 +194,8 @@
             [/^(.*\.(?:css|js))(.*)$/i, '$1$2?ver=' + G.version]
         ]
     });
-    seajs.use("app/src/explorer/main");
+//    seajs.use("app/src/explorer/main");
+    seajs.use("_dev/src/explorer/main");
 </script>
 </body>
 </html>

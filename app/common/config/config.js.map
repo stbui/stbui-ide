@@ -1,0 +1,23 @@
+{
+    "version": 3,
+    "sources": [
+        "..\\..\\..\\src\\common\\config\\config.js"
+    ],
+    "names": [
+        "port",
+        "system_name",
+        "system_desc",
+        "auto_login",
+        "first_in",
+        "new_user_app",
+        "new_user_folder",
+        "language",
+        "power_by",
+        "theme"
+    ],
+    "mappings": "AAAA;AACA;;;;;kBAGe;AACb;AACAA,QAAK,MAFQ;AAGbC,eAAY,oBAHC;AAIbC,eAAY,UAJC;AAKbC,cAAW,EALE;AAMbC,YAAS,EANI;AAObC,gBAAa,EAPA;AAQbC,mBAAgB,EARH;AASbC,YAAS,EATI;AAUbC,YAAS,oBAVI;AAWbC,SAAO;AAXM,C",
+    "file": "..\\..\\..\\src\\common\\config\\config.js",
+    "sourcesContent": [
+        "'use strict';\n/**\n * config\n */\nexport default {\n  //key: value\n  port:'8363',\n  system_name:'stbui online Tools',\n  system_desc:'文件管理构建系统',\n  auto_login:'',\n  first_in:'',\n  new_user_app:'',\n  new_user_folder:'',\n  language:'',\n  power_by:' - Power By Bright',\n  theme: ''\n};"
+    ]
+}
