@@ -109,7 +109,7 @@ var _class = function (_Base) {
         });
 
         // 写入到执行命令行的目录下
-        var cwd = process.cwd() + '/stbui.conf.js';
+        var cwd = process.cwd() + '/stbui-conf.js';
         _fs2.default.writeFileSync(cwd, tpl, 'utf-8');
 
         this.json(tpl);

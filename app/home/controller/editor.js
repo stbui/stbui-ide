@@ -96,7 +96,7 @@ var _class = function (_Base) {
             var data = {
                   "code": true,
                   "use_time": 0,
-                  "data": '修改已生效！'
+                  "data": '\u4FEE\u6539\u5DF2\u751F\u6548\uFF01'
             };
 
             this.json(data);

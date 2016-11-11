@@ -81,7 +81,7 @@ export default class extends Base {
         });
 
         // 写入到执行命令行的目录下
-        let cwd = process.cwd() + '/stbui.conf.js';
+        let cwd = process.cwd() + '/stbui-conf.js';
         fs.writeFileSync(cwd, tpl, 'utf-8');
 
         this.json(tpl);

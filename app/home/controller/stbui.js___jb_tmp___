@@ -30,6 +30,10 @@ export default class extends Base {
         return this.display();
     }
 
+    modeAction() {
+        return this.display();
+    }
+
     writeconfigAction() {
         let domain = this.post('domain');
         let base_css = this.post('base_css');
@@ -41,27 +45,27 @@ export default class extends Base {
         //     domain = 'http://emres.dfcfw.com/stock/201610121223';
         // }
 
-        if(think.isEmpty(base_css)) {
+        if (think.isEmpty(base_css)) {
             base_css = [];
         }
 
-        if(think.isEmpty(css)) {
+        if (think.isEmpty(css)) {
             css = [];
         }
 
-        if(think.isEmpty(base_js)) {
+        if (think.isEmpty(base_js)) {
             base_js = [];
         }
 
-        if(think.isEmpty(js)) {
+        if (think.isEmpty(js)) {
             js = [];
         }
 
-        if(!think.isArray(base_js)) {
+        if (!think.isArray(base_js)) {
             base_js = [base_js];
         }
 
-        if(!think.isArray(js)) {
+        if (!think.isArray(js)) {
             js = [js];
         }
 
@@ -71,13 +75,13 @@ export default class extends Base {
         let tpl = this.stbuiTemplate({
             domain: domain,
             appName: '',
-            version: '201610121223',
+            version: this.formatDate(),
             js: this.coverFormat(j, 'js'),
             css: this.coverFormat(c, 'css')
         });
 
         // 写入到执行命令行的目录下
-        let cwd = process.cwd() + '/stbui.conf.js';
+        let cwd = process.cwd() + '/stbui-conf.js';
         fs.writeFileSync(cwd, tpl, 'utf-8');
 
         this.json(tpl);
@@ -111,5 +115,22 @@ export default class extends Base {
         return "{" + data.join(',') + "}";
     }
 
+    formatDate() {
+        var now = new Date();
+        var y = now.getFullYear();
+        var m = now.getMonth() + 1;
+        var d = now.getDate();
+        var H = now.getHours();
+        var M = now.getMinutes();
+        var S = now.getSeconds();
+
+        m = m < 10 ? '0' + m : m;
+        d = d < 10 ? '0' + d : d;
+        H = H < 10 ? '0' + H : H;
+        M = M < 10 ? '0' + M : M;
+        S = S < 10 ? '0' + S : S;
+
+        return y + '' + m + '' + d + '' + H + '' + M;
+    }
 
 }

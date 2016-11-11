@@ -1,12 +1,24 @@
-<%include common/header.html%>
-<link href="/static/css/skin/metro/app_explorer.css" rel="stylesheet" id='link_css_list'/>
-<link rel="stylesheet" href="/static/xterm/xterm.css">
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" scroll="no">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="renderer" content="webkit">
+    <title>文件管理<%=think.config('power_by')%></title>
+    <link rel="Shortcut Icon" href="/static/images/favicon.ico">
+    <link href="/static/js/lib/picasa/style/style.css" rel="stylesheet"/>
+    <link href="/static/css/bootstrap.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/static/css/font-awesome/css/font-awesome.css">
+    <!--[if IE 7]>
+    <link rel="stylesheet" href="/static/css/font-awesome/css/font-awesome-ie7.css">
+    <![endif]-->
+    <link href="/static/css/skin/metro/app_explorer.css" rel="stylesheet" id='link_css_list'/>
+    <link rel="stylesheet" href="/static/xterm/xterm.css">
 </head>
 
 <body style="overflow:hidden;" oncontextmenu="return core.contextmenu();">
 <%include common/navbar.html%>
 
-    <div class="frame-header">
+<div class="frame-header">
     <div class="header-content">
         <div class="header-left">
             <div class="btn-group btn-group-sm">
@@ -100,10 +112,6 @@
                             <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
                                 <i class="font-icon icon-tasks"></i>more&nbsp;<span class="caret"></span>
                             </button>
-
-                            <button id='manage' class="btn btn-default" type="button">
-                                <i class="font-icon icon-legal"></i>管理
-                            </button>
                             <button id='stbui' class="btn btn-default" type="button">
                                 <i class="font-icon icon-legal"></i>构建
                             </button>
@@ -143,28 +151,6 @@
                         <button id='set_list' title="列表排列" type="button" class="btn btn-default">
                             <i class="font-icon icon-list"></i>
                         </button>
-                        <!--<div class="btn-group btn-group-sm">-->
-                            <!--<button id="set_theme" title="主题切换" type="button"-->
-                                    <!--class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">-->
-                                <!--<i class="font-icon icon-dashboard"></i>&nbsp;&nbsp;<span class="caret"></span>-->
-                            <!--</button>-->
-                            <!--<ul class="dropdown-menu pull-right dropdown-menu-theme fadein">-->
-                                <!--<li class='list ' theme='default/'><a href='javascript:void(0);'><b>areo blue</b></a>-->
-                                <!--</li>-->
-                                <!--<li class='list ' theme='simple/'><a href='javascript:void(0);'><b>simple</b></a></li>-->
-                                <!--<li class='list this' theme='metro/'><a href='javascript:void(0);'><b>metro</b></a></li>-->
-                                <!--<li class='list ' theme='metro/blue_'><a href='javascript:void(0);'>metro-blue</a></li>-->
-                                <!--<li class='list ' theme='metro/leaf_'><a href='javascript:void(0);'>metro-green</a></li>-->
-                                <!--<li class='list ' theme='metro/green_'><a href='javascript:void(0);'>metro-green+</a>-->
-                                <!--</li>-->
-                                <!--<li class='list ' theme='metro/grey_'><a href='javascript:void(0);'>metro-grey</a></li>-->
-                                <!--<li class='list ' theme='metro/purple_'><a href='javascript:void(0);'>metro-purple</a>-->
-                                <!--</li>-->
-                                <!--<li class='list ' theme='metro/pink_'><a href='javascript:void(0);'>metro-pink</a></li>-->
-                                <!--<li class='list ' theme='metro/orange_'><a href='javascript:void(0);'>metro-orange</a>-->
-                                <!--</li>-->
-                            <!--</ul>-->
-                        <!--</div>-->
                     </div>
                 </div>
                 <div style="clear:both"></div>
@@ -185,8 +171,8 @@
 <%include common/script.html%>
 <script type="text/javascript" src="/static/js/lib/socket.io/socket.io.js"></script>
 <script type="text/javascript">
-// <%=path%>
-    G.this_path = G.myhome+'\\';
+    // <%=path%>
+    G.this_path = G.myhome + '\\';
     seajs.config({
         base: "/static/js/",
         preload: ["lib/jquery-1.8.0.min"],
@@ -194,7 +180,7 @@
             [/^(.*\.(?:css|js))(.*)$/i, '$1$2?ver=' + G.version]
         ]
     });
-//    seajs.use("app/src/explorer/main");
+    //    seajs.use("app/src/explorer/main");
     seajs.use("_dev/src/explorer/main");
 </script>
 </body>

@@ -1,17 +1,1 @@
-{
-    "version": 3,
-    "sources": [
-        "..\\..\\..\\src\\home\\logic\\index.js"
-    ],
-    "names": [
-        "indexAction",
-        "think",
-        "logic",
-        "base"
-    ],
-    "mappings": "AAAA;AACA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAME;;;;mBAIAA,W,0BAAa,CAEZ,C;;;EAP0BC,MAAMC,KAAN,CAAYC,I",
-    "file": "..\\..\\..\\src\\home\\logic\\index.js",
-    "sourcesContent": [
-        "'use strict';\n/**\n * logic\n * @param  {} []\n * @return {}     []\n */\nexport default class extends think.logic.base {\n  /**\n   * index action logic\n   * @return {} []\n   */\n  indexAction(){\n   \n  }\n}"
-    ]
-}
+{"version":3,"sources":["../../../src/home/logic/index.js"],"names":["indexAction","think","logic","base"],"mappings":"AAAA;AACA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAME;;;;mBAIAA,W,0BAAa,CAEZ,C;;;EAP0BC,MAAMC,KAAN,CAAYC,I","file":"index.js","sourcesContent":["'use strict';\r\n/**\r\n * logic\r\n * @param  {} []\r\n * @return {}     []\r\n */\r\nexport default class extends think.logic.base {\r\n  /**\r\n   * index action logic\r\n   * @return {} []\r\n   */\r\n  indexAction(){\r\n   \r\n  }\r\n}"]}

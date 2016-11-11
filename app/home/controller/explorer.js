@@ -97,7 +97,7 @@ var _class = function (_Base) {
             _fs2.default.writeFileSync(path, '');
         }
 
-        this.json({ "code": true, "use_time": 0, "data": '新建成功！' });
+        this.json({ "code": true, "use_time": 0, "data": '\u65B0\u5EFA\u6210\u529F\uFF01' });
     };
 
     // 新建目录
@@ -111,7 +111,7 @@ var _class = function (_Base) {
             think.mkdir(path);
         }
 
-        this.json({ "code": true, "use_time": 0, "data": '新建成功！' });
+        this.json({ "code": true, "use_time": 0, "data": '\u65B0\u5EFA\u6210\u529F\uFF01' });
     };
 
     _class.prototype.pathrnameAction = function pathrnameAction() {
