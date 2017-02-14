@@ -7,6 +7,6 @@
     "mappings": "AAAA;;;;;;AAMA",
     "file": "..\\..\\..\\src\\common\\bootstrap\\middleware.js",
     "sourcesContent": [
-        "/**\n * this file will be loaded before server started\n * you can register middleware\n * https://thinkjs.org/doc/middleware.html\n */\n\n/**\n * \n * think.middleware('xxx', http => {\n *   \n * })\n * \n */\n"
+        "/**\r\n * this file will be loaded before server started\r\n * you can register middleware\r\n * https://thinkjs.org/doc/middleware.html\r\n */\r\n\r\n/**\r\n * \r\n * think.middleware('xxx', http => {\r\n *   \r\n * })\r\n * \r\n */\r\n"
     ]
 }

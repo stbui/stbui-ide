@@ -1,1 +1,22 @@
-{"version":3,"sources":["../../../src/common/config/view.js"],"names":["type","content_type","file_ext","file_depr","root_path","think","ROOT_PATH","adapter","ejs"],"mappings":"AAAA;AACA;;;;;kBAGe;AACbA,QAAM,KADO;AAEbC,gBAAc,WAFD;AAGbC,YAAU,OAHG;AAIbC,aAAW,GAJE;AAKbC,aAAWC,MAAMC,SAAN,GAAkB,OALhB;AAMbC,WAAS;AACPC,SAAK;AADE;AANI,C","file":"view.js","sourcesContent":["'use strict';\r\n/**\r\n * template config\r\n */\r\nexport default {\r\n  type: 'ejs',\r\n  content_type: 'text/html',\r\n  file_ext: '.html',\r\n  file_depr: '_',\r\n  root_path: think.ROOT_PATH + '/view',\r\n  adapter: {\r\n    ejs: {}\r\n  }\r\n};"]}
+{
+    "version": 3,
+    "sources": [
+        "..\\..\\..\\src\\common\\config\\view.js"
+    ],
+    "names": [
+        "type",
+        "content_type",
+        "file_ext",
+        "file_depr",
+        "root_path",
+        "think",
+        "ROOT_PATH",
+        "adapter",
+        "ejs"
+    ],
+    "mappings": "AAAA;AACA;;;;;kBAGe;AACbA,QAAM,KADO;AAEbC,gBAAc,WAFD;AAGbC,YAAU,OAHG;AAIbC,aAAW,GAJE;AAKbC,aAAWC,MAAMC,SAAN,GAAkB,OALhB;AAMbC,WAAS;AACPC,SAAK;AADE;AANI,C",
+    "file": "..\\..\\..\\src\\common\\config\\view.js",
+    "sourcesContent": [
+        "'use strict';\r\n/**\r\n * template config\r\n */\r\nexport default {\r\n  type: 'ejs',\r\n  content_type: 'text/html',\r\n  file_ext: '.html',\r\n  file_depr: '_',\r\n  root_path: think.ROOT_PATH + '/view',\r\n  adapter: {\r\n    ejs: {}\r\n  }\r\n};"
+    ]
+}

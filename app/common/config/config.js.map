@@ -18,6 +18,6 @@
     "mappings": "AAAA;AACA;;;;;kBAGe;AACb;AACAA,QAAK,MAFQ;AAGbC,eAAY,oBAHC;AAIbC,eAAY,UAJC;AAKbC,cAAW,EALE;AAMbC,YAAS,EANI;AAObC,gBAAa,EAPA;AAQbC,mBAAgB,EARH;AASbC,YAAS,EATI;AAUbC,YAAS,oBAVI;AAWbC,SAAO;AAXM,C",
     "file": "..\\..\\..\\src\\common\\config\\config.js",
     "sourcesContent": [
-        "'use strict';\n/**\n * config\n */\nexport default {\n  //key: value\n  port:'8363',\n  system_name:'stbui online Tools',\n  system_desc:'文件管理构建系统',\n  auto_login:'',\n  first_in:'',\n  new_user_app:'',\n  new_user_folder:'',\n  language:'',\n  power_by:' - Power By Bright',\n  theme: ''\n};"
+        "'use strict';\r\n/**\r\n * config\r\n */\r\nexport default {\r\n  //key: value\r\n  port:'8363',\r\n  system_name:'stbui online Tools',\r\n  system_desc:'文件管理构建系统',\r\n  auto_login:'',\r\n  first_in:'',\r\n  new_user_app:'',\r\n  new_user_folder:'',\r\n  language:'',\r\n  power_by:' - Power By Bright',\r\n  theme: ''\r\n};"
     ]
 }

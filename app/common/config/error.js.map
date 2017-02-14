@@ -1,1 +1,15 @@
-{"version":3,"sources":["../../../src/common/config/error.js"],"names":["key","msg"],"mappings":"AAAA;AACA;;;;;kBAGe;AACb;AACAA,OAAK,OAFQ,EAEC;AACdC,OAAK,QAHQ,CAGC;AAHD,C","file":"error.js","sourcesContent":["'use strict';\r\n/**\r\n * err config\r\n */\r\nexport default {\r\n  //key: value\r\n  key: \"errno\", //error number\r\n  msg: \"errmsg\" //error message\r\n};"]}
+{
+    "version": 3,
+    "sources": [
+        "..\\..\\..\\src\\common\\config\\error.js"
+    ],
+    "names": [
+        "key",
+        "msg"
+    ],
+    "mappings": "AAAA;AACA;;;;;kBAGe;AACb;AACAA,OAAK,OAFQ,EAEC;AACdC,OAAK,QAHQ,CAGC;AAHD,C",
+    "file": "..\\..\\..\\src\\common\\config\\error.js",
+    "sourcesContent": [
+        "'use strict';\r\n/**\r\n * err config\r\n */\r\nexport default {\r\n  //key: value\r\n  key: \"errno\", //error number\r\n  msg: \"errmsg\" //error message\r\n};"
+    ]
+}

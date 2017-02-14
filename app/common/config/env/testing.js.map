@@ -1,1 +1,12 @@
-{"version":3,"sources":["../../../../src/common/config/env/testing.js"],"names":[],"mappings":"AAAA;;;kBAEe,E","file":"testing.js","sourcesContent":["'use strict';\r\n\r\nexport default {\r\n  \r\n};"]}
+{
+    "version": 3,
+    "sources": [
+        "..\\..\\..\\..\\src\\common\\config\\env\\testing.js"
+    ],
+    "names": [],
+    "mappings": "AAAA;;;kBAEe,E",
+    "file": "..\\..\\..\\..\\src\\common\\config\\env\\testing.js",
+    "sourcesContent": [
+        "'use strict';\r\n\r\nexport default {\r\n  \r\n};"
+    ]
+}

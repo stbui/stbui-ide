@@ -1,7 +1,7 @@
 {
   "name": "stbui-ide",
   "description": "在线IDE",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "bright",
   "scripts": {
     "start": "node www/development.js",
@@ -10,7 +10,7 @@
     "watch": "npm run watch-compile"
   },
   "bin": {
-    "stbui-ide": "www/development.js"
+    "stbui-ide": "bin/index.js"
   },
   "dependencies": {
     "babel-runtime": "6.x.x",

@@ -1,30 +1,22 @@
 #!/usr/bin/env node
 
-var path = require('path');
 var thinkjs = require('thinkjs');
+var path = require('path');
+var program = require('commander');
+
 var rootPath = path.dirname(__dirname);
 
+var instance = new thinkjs({
+    APP_PATH: rootPath + path.sep + 'app',
+    RUNTIME_PATH: rootPath + path.sep + 'runtime',
+    ROOT_PATH: rootPath,
+    RESOURCE_PATH: __dirname,
+    env: 'production'
+});
 
-var start = function() {
-	var instance = new thinkjs({
-		APP_PATH: rootPath + path.sep + 'app',
-		RUNTIME_PATH: rootPath + path.sep + 'runtime',
-		ROOT_PATH: rootPath,
-		RESOURCE_PATH: __dirname,
-		env: 'development'
-	});
+//preload packages before start server.
+instance.run(true);
 
-	//compile src/ to app/
-	instance.compile({
-		retainLines: true,
-		log: true
-	});
-
-	instance.run();
-}
-
-
-var program = require('commander');
 
 program.usage('[options] name')
 
