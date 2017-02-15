@@ -10,7 +10,7 @@
     "watch": "npm run watch-compile"
   },
   "bin": {
-    "stbui-ide": "bin/index.js"
+    "stbui-ide": "www/production.js"
   },
   "dependencies": {
     "babel-runtime": "6.x.x",

@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var thinkjs = require('thinkjs');
 var path = require('path');
 
